@@ -57,6 +57,7 @@ const Todo = () => {
                 <p>
                 <input type="text" name="listItem" placeholder='Type Here'
                 value={input} onChange={(e) => setInput(e.target.value)}
+                autoComplete="off"
                 /> 
                 <i className="far fa-list-ul" id='todoIcon' onClick={() => {add()}}></i>
                 </p>
@@ -65,7 +66,8 @@ const Todo = () => {
                 {todos.map((todo) => {
                     return(
                         <div className="todoItems" key={todo.id}>
-                        <span className='todoPara'>{todo.name}<i className="far fa-trash-alt" onClick={() => {deleteTodo(todo.id)}}></i></span>
+                        <span className='todoPara'>{todo.name}<i className="far fa-trash-alt" 
+                        onClick={() => {deleteTodo(todo.id)}}></i></span>
                         <hr />
                         </div>
                     )
