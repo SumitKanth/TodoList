@@ -7,7 +7,7 @@ This is a TodoList
 ## Features
 
 - This app is responsive
-- This app also use local Storage
+- This app also use local storage for storing data
 
 
 ## 🚀 About Me
