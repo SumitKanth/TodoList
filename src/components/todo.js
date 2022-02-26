@@ -84,7 +84,7 @@ const Todo = () => {
             }
         })
         setInput(editElement.name);
-        setTogel(true);
+        setTogel(true)
         setIsEditId(textId);
 
     }
